@@ -38,6 +38,7 @@ module.exports = function handleCovid19StatusRequest(data, splittedMessage) {
                 obj.deaths += re.deaths;
                 obj.recovered += re.recovered;
                 obj.lastUpdate = re.lastUpdate;
+
             }
             data.channel.send('Country: ' + splittedMessage[1]);
             data.channel.send('Confirmed Case: ' + obj.confirmed);
@@ -45,7 +46,7 @@ module.exports = function handleCovid19StatusRequest(data, splittedMessage) {
             data.channel.send('Recoverd Case: ' + obj.recovered);
             data.channel.send('Last Update: ' + obj.lastUpdate);
             //  console.log(res.body.data.covid19Stats);
-        });
+        })
     }
 
 };

@@ -36,7 +36,7 @@ bot.on('message', (data) => {
     }
 
     if (splittedMessage[0].toUpperCase() === 'COVID19') {
-       covide19Response(data,splittedMessage);
+     //  covide19Response(data,splittedMessage);
     }
 
     if (data.content.toUpperCase().includes('LOVE') && user !== 'WorldClock') {
