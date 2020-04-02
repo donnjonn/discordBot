@@ -23,6 +23,7 @@ module.exports = function checkSentiment(data, text) {
             data.channel.send(goodWordResponses[randomNr] + data.author.username);
         }
 
+        
     }
 };
 
