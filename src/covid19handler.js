@@ -8,6 +8,7 @@ module.exports = function handleCovid19StatusRequest(data, splittedMessage) {
     } else {
         var req = unirest("GET", "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats");
         var country = splittedMessage[1];
+        country = country.charAt(0).toUpperCase() + country.slice(1)
         if (splittedMessage.length > 2) {
             req.query({
                 "country": splittedMessage[1] + ' ' + splittedMessage[2]
