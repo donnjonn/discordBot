@@ -2,16 +2,18 @@
   "name": "discordlast",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/other.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@discordjs/opus": "^0.1.0",
     "bad-words": "^3.0.3",
     "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
     "discord.js": "^12.1.1",
+    "ffmpeg-static": "^4.0.1",
     "one-liner-joke": "^1.2.0",
     "request": "^2.88.2",
     "sentiment": "^5.0.2",

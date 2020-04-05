@@ -9,7 +9,7 @@ var goodWordResponses = ['These are some nice words.. Thanks ',
     'Thank you for being nice to me ', 'You deserve a medal '];
 
 
-module.exports = function checkSentiment(data, text) {
+module.exports = async function checkSentiment(data, text) {
     if (text.toUpperCase().includes('BOT') || text.toUpperCase().includes('ROBOT') || text.toUpperCase().includes('WorldClock')) {
         console.log('Entered here');
         console.log(sentimentReader.analyze(text));
